@@ -1,0 +1,14 @@
+1.  A C header file that contains typedef declarations for exact-width integer types. The bmp.h header file then typedef's these again
+    to it's own naming conventions.
+2.  The exact width types will be the same across all systems, whereas otherwise the size can vary from system to system.
+3.  BYTE = 1 byte; DWORD = 4 bytes; LONG = 4 bytes; WORD = 2 bytes
+4.  In hexadecimal: 42 4D
+5.  biSize is the numbers of bytes of the structure; bfSize is the number of bytes of the bitmap file.
+6.  It means the image is top down, and the origin is the upper left hand corner.
+7.  biBitCount
+8.  When using fopen to open a file, NULL would indicate that the file was not found. When using fopen to write, NULL would 
+    indicate that there was an error creating the file.
+9.  Because we're only reading one block, looking for a BITMAPINFOHEADER.
+10. Zero
+11. fseek lets you dictate the location of a file pointer; offset by a set amount, and indicate the direction of the offset.
+12. The current location of a file pointer.
